@@ -1,0 +1,84 @@
+﻿html,
+body {
+	line-height: 1.75em;
+	font-family: "微软雅黑";
+	background-color: lightyellow;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.part-3 h3{
+	text-align: center;
+}
+
+input{
+	margin-right: 20px;
+}
+
+label{
+	font-weight: 500;
+}
+
+a{
+	color: darkred;
+}
+
+a:hover{
+	color: orangered;
+	text-decoration: none;
+}
+
+header{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom:50px ;
+}
+
+.part-1,
+.part-2,
+.part-3{
+	box-shadow: 8px 8px 10px lightgray;
+	border: 1px solid lightgray;
+	background: white;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	margin-bottom: 50px;
+}
+
+.img-1{
+	width: 100px;
+	vertical-align: text-top;
+	margin-left: 30px;
+}
+
+.img-2{
+	height: 35px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+.btn-2{
+	width: 300px;
+}
+
+.td_1{
+	width: 250px;
+}
+
+.copyright {
+	background: #111;
+	font-size: 13px;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-top: 1px solid #303030;
+}
+
+.copyright span {
+	margin: 0 .5em;
+	color: white;
+}

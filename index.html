@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8" />
+		<meta name="description" content="">
+		<meta name="author" content="shy">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<title>homework-day2</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Homework-Day2</h1>
+		</header>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="part-1 col-lg-12">
+						<h3>基本资料</h3>
+						<hr />
+						<p>亲爱的 <strong>shy</strong>，填写真实的资料，有助于好友找到你哦。</p>
+						<form class="form-horizontal" action="#" method="post" name="msg">
+							<div class="form-group">
+								<p class="col-sm-4"><span>当前头像：</span><img class="img-thumbnail img-1" src="image/image1.jpg" align="texttop" /></p>
+							</div>
+							<div class="form-group">
+								<label for="name" class="col-sm-1">*昵称：</label>
+								<div class="col-sm-3">
+									<input type="text" class="form-control" id="name" placeholder="昵称" />
+								</div>
+								<p class="col-sm-offset-1 col-sm-12">*昵称填写须知：与淘宝业务或卖家品牌冲突的昵称，淘宝将有可能收回</p>
+							</div>
+							<div class="form-group">
+								<label for="real_name" class="col-sm-1">真实姓名</label>
+								<div class="col-sm-2">
+									<input type="text" class="form-control" id="real_name" placeholder="真实姓名" />
+								</div>
+							</div>
+							<div class="form-group">
+								<span class="col-sm-1">*性别：</span>
+								<label class="col-sm-1">
+									<input type="radio" name="sex" />男
+								</label>
+								<label class="col-sm-1">
+									<input type="radio" name="sex" />女
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-1">生日：</label>
+								<div class="col-sm-2">
+									<select class="form-control" id="year" name="year" onchange="selectYear(this.value)">
+										<option value="">请选择年</option>
+									</select>
+								</div>
+								<div class="col-sm-2">
+									<select class="form-control" id="month" name="month" onchange="selectMonth(this.value)">
+										<option value="">请选择月</option>
+									</select>
+								</div>
+								<div class="col-sm-2">
+									<select class="form-control" id="day" name="day">
+										<option value="">请选择日</option>
+									</select>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-warning">保存</button>
+						</form>
+					</div>
+					<div class="part-2 col-lg-12">
+						<h3>注册新用户</h3><span>我已经注册，现在就<a href="javascript:">登录</a></span>
+						<hr />
+						<form class="form-horizontal" action="#" method="post" name="registe">
+							<div class="form-group">
+								<div class="col-sm-2">
+									<input type="text" name="vdcode" id="vdcode" class="form-control" placeholder="验证码" />
+								</div>
+								<div class="col-sm-1">
+									<img src="image/vdcode.jpg" class="img-2" id="code" />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-2">
+									<input type="text" name="tel" id="tel" class="form-control" placeholder="请输入手机号" />
+								</div>
+								<div class="col-sm-1">
+									<button type="button" class="btn btn-default">获取短信验证码</button>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-4">
+									<input type="text" name="tel_code" id="tel_code" class="form-control" placeholder="填写手机验证码" />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-4">
+									<input type="password" name="password" id="password" class="form-control" placeholder="设定登录密码" />
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-4">
+									<input type="password" name="re_psd" id="re_psd" class="form-control" placeholder="再次输入密码" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-12"><input type="checkbox" />请阅读<a>《VANCL凡客诚品服务条款》</a></label>
+							</div>
+							<button type="submit" class="btn btn-2" disabled="disabled">立即注册</button>
+						</form>
+					</div>
+					<div class="part-3 col-lg-12">
+						<h3>个人简历</h3>
+						<table class="table table-bordered table-striped">
+							<tr>
+								<th colspan="3">个人资料</th>
+							</tr>
+							<tr>
+								<td class="td_1">姓名：林先生</td>
+								<td>婚姻状况：未婚</td>
+								<td rowspan="6">照片</td>
+							</tr>
+							<tr>
+								<td>出生：1989-08-24</td>
+								<td>政治面貌：团员</td>
+							</tr>
+							<tr>
+								<td>性别：男</td>
+								<td>民族：汉</td>
+							</tr>
+							<tr>
+								<td>学位：本科</td>
+								<td>移动电话：</td>
+							</tr>
+							<tr>
+								<td>专业：英语</td>
+								<td>电子邮件：</td>
+							</tr>
+							<tr>
+								<td colspan="2">地址：</td>
+							</tr>
+							<tr>
+								<th colspan="3">教育背景</th>
+							</tr>
+							<tr>
+								<td>2010.9-1014.6</td>
+								<td colspan="2">华南师范大学————外国语言文学系</td>
+							</tr>
+							<tr>
+								<th colspan="3">主修课程</th>
+							</tr>
+							<tr>
+								<td>本科阶段主修</td>
+								<td colspan="2">大学英语精读，大学英语泛读，英语口语，英语听力，英语写作，英语口译，翻译学，词汇学，语法学，英美概况，英国文学，美国文学，语言学，日语，中外名胜</td>
+							</tr>
+							<tr>
+								<th colspan="3">特长及兴趣爱好</th>
+							</tr>
+							<tr>
+								<td colspan="3">除了有专业的英语方面知识外，我在校生活部工作一年，在系宣传部和秘书处各工作一年。为全面发展，大三上学期，我加入系文学社，参与了我系《心韵》杂志的创刊和编辑工作。在这些活动中锻炼了我领导和团队协作的能力，学会了更好的与人相处，这些在我以后的工作中一定会有很大的帮助。</td>
+							</tr>
+							<tr>
+								<th colspan="3">计算机能力</th>
+							</tr>
+							<tr>
+								<td colspan="3">能熟悉使用Office工具以及Photoshop,Flash等软件。<br /> 获得国家计算机二级资格证书
+								</td>
+							</tr>
+							<tr>
+								<th colspan="3">外语水平</th>
+							</tr>
+							<tr>
+								<td colspan="3">通过英语专业四级开始，能熟练进行听说读写译</td>
+							</tr>
+							<tr>
+								<th colspan="3">奖励情况</th>
+							</tr>
+							<tr>
+								<td colspan="3">2011-2012 优秀学生会干部<br/>普通话水平测试等级证书<br/>英语专业四级证书<br/>2013-7 师生合唱比赛一等奖
+								</td>
+							</tr>
+							<tr>
+								<th colspan="3">自我评价</th>
+							</tr>
+							<tr>
+								<td colspan="3">无</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<span>written by shy</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+
+</html>
